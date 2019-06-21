@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  background-color: #e5e5e5;
+}
+
+.op-btn {
+  width: 28px;
+  height: 28px;
+  display: inline-block !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  position: relative !important;
+  touch-action: manipulation !important;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px !important;
+  border-radius: 50% !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+  background: rgb(255, 255, 255) !important;
+}

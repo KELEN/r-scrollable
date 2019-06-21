@@ -1,0 +1,17 @@
+.r-scrollable-btn {
+  position: absolute;
+  z-index: 999;
+}
+
+.r-scrollable-btn--left,
+.r-scrollable-btn--right {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+.r-scrollable-btn--right {
+  left: auto;
+  right: 0;
+}
