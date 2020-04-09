@@ -8,14 +8,14 @@ class Index extends React.Component {
     super(props)
 
     this.state = {
-      items: [1,2,3,4,5]
+      items: ["北京", "上海", "成都", "重庆", "杭州", "厦门", "广州", "西安"]
     }
   }
 
   addNewItem() {
     const { items } = this.state
     this.setState({
-      items: items.concat(Math.random())
+      items: items.concat(Math.random().toFixed(2))
     })
   }
 
@@ -37,18 +37,20 @@ class Index extends React.Component {
         <button onClick={this.removeItem.bind(this)}>remove item</button>
         <ScrollableContainer
           className="container"
-          distance={400}
+          distance={130}
           prevButton={
             <div className="op-btn">
+              <svg className="svg" viewBox="0 0 18 18" role="img" aria-label="previous" focusable="false"><path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z" fillRule="evenodd"></path></svg>
             </div>
           }
           nextButton={
             <div className="op-btn">
+              <svg className="svg" viewBox="0 0 18 18" role="img" aria-label="next" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fillRule="evenodd"></path></svg>
             </div>
           }
         >
           {
-            items.map(item => <div key={item} className="item"></div>)
+            items.map(item => <div key={item} className="item">{item}</div>)
           }
         </ScrollableContainer>
       </div>

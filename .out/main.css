@@ -1,3 +1,27 @@
+.r-scrollable-btn {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.r-scrollable-btn--left,
+.r-scrollable-btn--right {
+  top: 0;
+  bottom: 0;
+}
+
+.r-scrollable-btn--left {
+  left: 0;
+}
+
+.r-scrollable-btn--right {
+  left: auto;
+  right: 0;
+}
 .container {
   position: relative;
   white-space: nowrap;
@@ -7,15 +31,19 @@
   width: 120px;
   height: 48px;
   margin: 10px;
+  display: -webkit-inline-flex;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
   margin-right: 10px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
   border-width: 0.5px !important;
   border-style: solid !important;
   border-color: rgb(216, 216, 216) !important;
+  border-image: none !important;
   border-image: initial !important;
   border-radius: 3px !important
 }
@@ -23,6 +51,7 @@
 .op-btn {
   width: 28px;
   height: 28px;
+  display: -webkit-inline-flex;
   display: inline-flex;
   border-radius: 50% !important;
   border-width: 0.5px !important;
@@ -30,8 +59,10 @@
   border-color: #a5a5a5 !important;
   cursor: pointer;
   background-color: #fff;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 
 .blur-background {
@@ -49,3 +80,5 @@
   display: block;
   fill: currentcolor;
 }
+
+/*# sourceMappingURL=main.css.map*/

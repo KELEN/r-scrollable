@@ -1,7 +1,6 @@
 {
   "name": "r-scrollable",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.4",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -10,7 +9,9 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build": "webpack --mode production"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,9 +29,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9"
+    "@storybook/react": "^5.1.9",
+    "@storybook/storybook-deployer": "^2.8.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }

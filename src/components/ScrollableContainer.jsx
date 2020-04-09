@@ -153,7 +153,7 @@ class ScrollableContainer extends React.Component {
     }
 
     return (
-      <div className={className} ref={container => this.container = container}>
+      <div className={className} ref={container => this.container = container} style={{ overflow: 'hidden' }}>
         {
           showPrev &&
           (
