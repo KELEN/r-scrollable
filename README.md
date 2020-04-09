@@ -1,6 +1,6 @@
 ### 元素溢出显示左右按钮组件
 
-![example picture](https://raw.githubusercontent.com/KELEN/r-scrollable/master/public/favicon.ico);
+![example picture](https://raw.githubusercontent.com/KELEN/r-scrollable/master/public/scrollable-picture.png)
 
 #### Demo
 
