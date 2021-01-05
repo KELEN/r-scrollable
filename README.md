@@ -11,21 +11,10 @@
 ```bash 
 npm i r-scrollable -S
 ```
-
-#### 声明容器样式
-
-```css
-.container {
-  position: relative;
-  white-space: nowrap;
-}
-```
-
 #### 使用
 
 ```javascript
 <ScrollableContainer
-  className="container"
   distance={130}
   prevButton={
     <div className="op-btn">

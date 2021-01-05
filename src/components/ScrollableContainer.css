@@ -1,3 +1,12 @@
+.r-scrollable-container {
+  position: relative;
+}
+
+.r-scrollable-content {
+  position: relative;
+  white-space: nowrap;
+}
+
 .r-scrollable-btn {
   position: absolute;
   z-index: 999;
